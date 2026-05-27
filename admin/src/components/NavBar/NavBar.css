@@ -1,0 +1,47 @@
+.navbar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+    background-color: var(--accent);
+
+    img {
+        height: 250px;
+    }
+
+    .logo-navbar {
+        margin: 10px 0px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 35px;
+
+        button {
+            width: 200px;
+            height: 50px;
+            background: #ffffff1f;
+            color: white;
+
+            border: 1px solid #ffffff14;
+            border-radius: 14px;
+            backdrop-filter: blur(10px);
+            transition: all .2s ease;
+        }
+
+        button:hover {
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.685);
+        }
+
+    }
+
+    .login-user {
+        margin-top: auto;
+    }
+
+}
