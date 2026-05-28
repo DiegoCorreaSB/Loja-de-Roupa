@@ -1,0 +1,117 @@
+.container-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+
+    width: 65%;
+    height: fit-content;
+
+    background-color: var(--accent);
+    border-radius: 40px;
+    padding: 40px;
+
+    .form-title {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        text-decoration: underline;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .form-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            input {
+                height: 40px;
+                width: 550px;
+
+                border: none;
+                padding: 3px;
+                padding-left: 10px;
+                border-radius: 9px;
+
+                background: #ffffff1f;
+                color: white;
+
+                font-size: 1.2em;
+
+                border: 2px solid #ffffff14;
+                backdrop-filter: blur(10px);
+                transition: all .2s ease;
+
+
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+
+        .form-btn {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            button {
+                height: 100px;
+                width: 360px;
+
+                background: #ffffff1f;
+                color: white;
+
+                font-size: 1.2em;
+
+                border: 2px solid #ffffff14;
+                border-radius: 50px;
+                backdrop-filter: blur(10px);
+                transition: all .2s ease;
+            }
+
+            .save-btn:hover {
+                cursor: pointer;
+                background-color: rgba(172, 255, 47, 0.281);
+                transition: all .2s ease;
+                border-color: greenyellow;
+            }
+
+            .cancel-btn:hover {
+                cursor: pointer;
+                background-color: rgba(220, 20, 60, 0.397);
+                transition: all .2s ease;
+                border-color: crimson;
+            }
+        }
+    }
+
+    input::placeholder {
+        color: rgba(255, 255, 255, 0.116);
+    }
+}
+
+.upImg {
+    width: 100px;
+    height: 50px;
+
+    background: #ffffff1f;
+    color: white;
+
+    border: 2px solid #ffffff14;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: all .2s ease;
+}
+
+.upImg:hover {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.685);
+}

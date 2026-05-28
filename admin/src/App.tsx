@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar/NavBar'
+import AddProduct from '../src/components/addProduct/addProduct'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [pag, setPag] = useState("home")
 
   return (
     <>
-      <NavBar />
+      <NavBar setPag={setPag}/>
+
+      {pag === "addProduct" && <AddProduct/>}
 
     </>
   )
